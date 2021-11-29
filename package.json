@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/config/server.js",
-    "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn --no-notify src/config/server.ts",
+    "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn --no-notify src/config/server.ts ",
     "deploy": "IF EXIST dist (rm -rv dist && tsc) ELSE (tsc)"
   },
   "dependencies": {
