@@ -5,9 +5,10 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/config/server.js",
-    "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn --no-notify src/config/server.ts",
-    "deploy": "IF EXIST dist (rm -rv dist && tsc) ELSE (tsc)"
+    "start": "node dist/config/server.js yarn studio",
+    "dev": " yarn studio tsnd --inspect --transpile-only --ignore-watch node_modules --respawn --no-notify src/config/server.ts",
+    "deploy": "IF EXIST dist (rm -rv dist && tsc) ELSE (tsc)",
+    "studio": "yarn prisma studio"
   },
   "dependencies": {
     "@prisma/client": "^3.5.0",
