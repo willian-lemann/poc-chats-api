@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/config/server.js",
-    "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn --no-notify src/config/server.ts ",
-    "deploy": "IF EXIST dist (rm -rv dist && tsc) ELSE (tsc)"
+    "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn --no-notify src/config/server.ts",
+    "deploy": "if [ -d 'dist'] ; then rm -rv dist else tsc; fi"
   },
   "dependencies": {
     "@prisma/client": "^3.5.0",
