@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "node dist/config/server.js",
     "dev": "tsnd --inspect --transpile-only --ignore-watch node_modules --respawn --no-notify src/config/server.ts",
-    "deploy": "if [ -d 'dist']; then rm -rv dist tsc else tsc fi"
+    "deploy": "if [ -d 'dist']; then rm -rv dist && tsc else tsc fi"
   },
   "dependencies": {
     "@prisma/client": "^3.5.0",
