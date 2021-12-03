@@ -27,3 +27,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build dist
         run: yarn deploy
+
+      - name: Run migrations
+        run: yarn prisma migrate dev
