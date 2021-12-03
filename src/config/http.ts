@@ -12,6 +12,7 @@ const io = new Server(serverHttp, { cors: { origin: "*" } });
 
 app.use(express.json());
 app.use(cors());
+
 app.use(routes);
 
 export { serverHttp, io };
