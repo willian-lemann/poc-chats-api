@@ -11,6 +11,13 @@ datasource db {
 }
 
 model User {
-  name  String @id
+  id    String @id @default(uuid())
+  name  String
   email String
+}
+
+model Address {
+  id     String @id @default(uuid())
+  street String
+  city   String
 }
